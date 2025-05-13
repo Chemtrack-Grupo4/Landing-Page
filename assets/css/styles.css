@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.custom-navbar {
+  background-color: #111A23; /* Fondo blanco */
+  color: #333333;            /* Texto gris oscuro */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para efecto moderno */
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: #047211 !important;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #007bff !important; /* Azul Bootstrap para hover */
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.level-1-title {
+  color: #072a16;
+  -webkit-text-fill-color: #072a16;
+  -moz-text-fill-color: #072a16;
+  -ms-text-fill-color: #072a16;
+  font-family: "Heebo", sans-serif;
+}
+
+.level-1-title-white {
+  color: #fff;
+  font-family: "Heebo", sans-serif;
+}
+
+.level-2-title {
+  color: #0FF82B;
+  -webkit-text-fill-color: #0FF82B;
+  -moz-text-fill-color: #0FF82B;
+  -ms-text-fill-color: #0FF82B;
+  font-family: "Heebo", sans-serif;
+}
+
+.paragraph {
+  color: #047211;
+  font-family: "Jost", sans-serif;
+}
+
+/* CARDS */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.63)),
+    url(../images/foto1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero .content {
+  padding-top: 300px;
+}
+
+@media (max-width: 850px) {
+  .hero {
+    background-position: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .hero .content h5 {
+    font-size: 25px;
+  }
+  .hero .content h1 {
+    font-size: 38px;
+  }
+  .hero .content p {
+    font-size: 13px;
+  }
+}
+
+/* CALIFICACION */
+.small-ratings i {
+  color: #cecece;
+}
+.rating-color {
+  color: #047211 !important;
+}
+
+.fa-solid fa-book {
+  color: #2d6b22;
+}
+
+.aboutpt-section {
+	padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column-pt {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 10px;
+}
+.container-iframe{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.container-iframe iframe{
+	position: absolute;
+	top:0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .column-pt {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .column-pt {
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+  }
+}
+
+/* Asegura que html y body ocupen toda la altura */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hace que el contenido principal crezca y empuje el footer */
+body > main {
+  flex: 1;
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #343a40; /* o el color que uses */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  width: max-content;
+}
+
+

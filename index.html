@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="ChemTrack" />
+    <meta name="description" content="Aplicación de deteccion y alerta para el transporte seguro de productos peligrosos" />
+    <meta name="keywords" content="Transporte de materiales peligrosos,Productos altamente peligrosos,Peru" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="author" content="CuriDev" />
+    <!-- TITLE -->
+    <title>ChemTrack</title>
+    <!-- LINKS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar py-3 fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center h1 fw-bold" href="#">
+          <img
+            src="./assets/images/Logo.png"
+            alt="logo"
+            width="70"  
+            height="60"
+            class="d-inline-block align-text-top"
+          />
+              ChemTrack
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#download">Descargar</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href=""
+                >Aplicación</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Idioma
+              </a>
+              <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="indexEN.html">Inglés</a>
+                <a class="dropdown-item" href="index.html">Español</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <div class="hero" id="home">
+      <div class="content justify-content-center text-center">
+        <h1 class="text-white">
+          Bienvenido a
+          <span class="fw-bold level-2-title"> ChemTrack: </span> Tu Guia para el 
+          transporte de productos peligrosos
+        </h1>
+        <p class="paragraph text-white lead">
+          Transporta productos peligrosos y déjanos toda la seguridad en nuestras manos
+        </p>
+        <a href="#about" class="btn btn-light">
+          Saber más
+        </a>
+      </div>
+    </div>
+    <!-- SERVICES -->
+    <section class="p-5" id="services">
+      <div class="container py-5">
+        <h1 class="text-center mb-5 level-1-title fw-bold">Nuestros servicios</h1>
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card p-5">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa-solid fa-car" style="color: #FCB658"></i>
+                </div>
+                <h2 class="level-2-title card-title mb-3">Servicio de Transporte</h2>
+                <p class="card-text paragraph lead">
+                  Brindamos un servicio de transporte de productos peligrosos,
+                  implementando la supervisión tanto del conductor como el monitoreo
+                  para la empresa.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md">
+            <div class="card p-5">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa-solid fa-eye" style="color: #FCB658"></i>
+                </div>
+                <h2 class="level-2-title card-title mb-3">Monitoreo en Tiempo Real</h2>
+                <p class="card-text paragraph lead">
+                  Ofrecemos un sistema de monitoreo en tiempo real que pueda
+                  detectar posibles fugas de gases combustibles (GNV) durante el
+                  transporte de estos.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md">
+            <div class="card p-5">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa-solid fa-microchip" style="color: #FCB658"></i>
+                </div>
+                <h2 class="level-2-title card-title mb-3">Uso de Sensores IoT</h2>
+                <p class="card-text paragraph lead">
+                  Los vehículos contarán con sensores que supervisarán el material
+                  de carga y se notificará en caso de existir una fuga. Serán
+                  sensores de temperatura, presión, movimiento, etc.
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md">
+            <div class="card p-5">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="fa-solid fa-shield-heart" style="color: #FCB658"></i>
+                </div>
+                <h2 class="level-2-title card-title mb-3">Transporte Seguro</h2>
+                <p class="card-text paragraph lead">
+                  Juntos podremos transportar materiales y productos peligrosos sin
+                  ningún tipo de peligro. Déjanos ayudarte y cuidarte en toda tu
+                  travesía.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Section 
+        <div class="mt-5 text-center">
+          <h2 class="mb-3">Video About the Product:</h2>
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/Yvt-Ny_nIB8"
+              title="ChemTrack - Video de Servicios"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+-->
+
+    <!-- ABOUT -->
+    <section class="bg-light p-5" id="about">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md">
+            <a href="#">
+              <img
+                class="img-fluid img-thumbnail"
+                src="assets/images/peligrosa.jpeg"
+                alt="imagen que representa a un vehiculo transportando productos peligrosos"
+              />
+            </a>
+          </div>
+          <div class="col-md p-5">
+            <h1 class="level-1-title fw-bold">¿Quiénes somos?</h1>
+            <p class="paragraph lead">
+              ChemTrack nació gracias a la necesidad de una empresa dedicada a
+              gestionar la seguridad en el transporte de productos peligrosos.
+              Nuestra misión es ayudar a los transportistas a sentirse más seguros
+              y protegidos en sus trabajos, desde materiales menos peligrosos hasta
+              aquellos altamente riesgosos que puedan dañar la salud de las
+              personas.
+            </p>
+            <p class="paragraph lead">
+              Únete y sé parte de esta familia, que ayudándonos mutuamente
+              garantizamos un transporte tranquilo y sin preocupaciones.
+            </p>
+            <a href="#" class="btn btn-warning mt-3">
+              Leer más <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+     <!--
+        <div class="mt-5 text-center">
+          <h2 class="mb-3">Video About the Team:</h2>
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/gcbiSk5zAf8"
+              title="ChemTrack - ¿Quiénes Somos?"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+-->
+    <!-- TESTIMONIALS -->
+<section class="p-5" id="testimonials" style="background-color: #047211;">
+      <div class="container py-5">
+        <h1 class="text-center level-1-title-black fw-bold">Testimonios</h1>
+
+        <p class="lead text-center text-black mb-5 paragraph">
+          Esto es lo que nuestros clientes opinan de nosotros
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center p-5">
+                <img
+                  class="img-fluid img-thumbnail mb-3"
+                  src="assets/images/p1.jpg"
+                  alt="foto de Miguel Rojas"
+                />
+                <h3 class="card-title mb-3 level-2-title fw-bold">
+                  Luis R. - Transportista experimentado
+                </h3>
+                <div class="small-ratings mb-3">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p class="card-text paragraph">
+                  "Desde que empecé a utilizar los sensores IoT de ChemTrack, he tenido un control total sobre la temperatura y seguridad de mis cargas. Esto me ha permitido evitar incidentes costosos y garantizar que los productos lleguen en óptimas condiciones."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center p-5">
+                <img
+                  class="img-fluid img-thumbnail mb-3"
+                  src="assets/images/p2.jpg"
+                  alt="foto de Xiomara Vélez"
+                />
+                <h3 class="card-title mb-3 level-2-title fw-bold">
+                  Paola L. - Gerente de Operaciones
+                </h3>
+                <div class="small-ratings mb-3">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                </div>
+                <p class="card-text paragraph">
+                  "Con los dispositivos IoT de ChemTrack, hemos mejorado la eficiencia de nuestros transportes de productos de alto riesgo. La capacidad de monitorear en tiempo real nos ha permitido optimizar rutas y reducir riesgos significativamente."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body text-center p-5">
+                <img
+                  class="img-fluid img-thumbnail mb-3"
+                  src="assets/images/p3.avif"
+                  alt="foto de Jean Quispe"
+                />
+                <h3 class="card-title mb-3 level-2-title fw-bold">
+                  Carlos G. -  Director de Logística
+                </h3>
+                <div class="small-ratings mb-3">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <p class="card-text paragraph">
+                  "La implementación de los sensores IoT en nuestra cadena de suministro ha sido clave para mantener la integridad de nuestros productos durante el transporte. ChemTrack nos brinda tranquilidad y seguridad en cada envío"
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="p-5 bg-light" id="download">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md">
+            <a href="#">
+              <img
+                class="img-fluid img-thumbnail"
+                src="assets/images/descarga.png"
+                alt="imagen que representa una descarga"
+              />
+            </a>
+          </div>
+          <div class="col-md p-5">
+            <h1 class="level-1-title fw-bold">Obtén nuestra aplicación</h1>
+            <p class="paragraph lead">
+              ¡Lleva la seguridad y tranquilidad contigo! Descarga nuestra aplicación ChemTrack y seras parte de esta familia. Aprovecha las ventajas de transportar carga peligrosa con nuestra ayuda, seremos los primeros en avisarte ante cualqujier incidente y te daremos un sin numero de soluciones.
+            </p>
+
+            <div class="row align-items-center justify-content-center">
+              <div class="col-md-6 col-lg-6 mb-3">
+                <a href="#">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/google-play-badge.png"
+                    alt="Disponible en Google Play"
+                    width="70%"
+                  />
+                </a>
+              </div>
+
+              <div class="col-md-6 col-lg-6 mb-3">
+                <a href="#">
+                  <img
+                    class="img-fluid"
+                    src="assets/images/app-store-badge.png"
+                    alt="Disponible en App Store"
+                    width="70%"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white pt-5 w-100" id="contact">
+  <div class="container-fluid px-5">
+    <div class="row g-4">
+
+      <!-- Brand and Description -->
+      <div class="col-lg-4 col-md-6">
+        <h3 class="text-uppercase fw-bold mb-3">TrackTox</h3>
+        <p class="mb-3">
+          "Protege tu carga, controla tu ruta. Tecnología IoT para un transporte de combustible más seguro."
+        </p>
+        <div>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-uppercase fw-bold mb-3">Síguenos en</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none">
+              <i class="fab fa-facebook me-2"></i>Página de Facebook
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="#" class="text-white text-decoration-none">
+              <i class="fab fa-instagram me-2"></i>Cuenta de Instagram
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-white text-decoration-none">
+              <i class="fab fa-tiktok me-2"></i>Cuenta de TikTok
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="col-lg-4 col-md-12">
+        <h5 class="text-uppercase fw-bold mb-3">Contacto</h5>
+        <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-success"></i>Lima, Perú</p>
+        <p class="mb-2"><i class="fas fa-phone me-2 text-success"></i>(+51) 958 452 144</p>
+        <p><i class="fas fa-envelope me-2 text-success"></i>TrackTox@info.com</p>
+      </div>
+
+    </div>
+
+    <hr class="border-top border-light my-4">
+
+    <div class="text-center pb-3">
+      <small>&copy; 2025 TrackTox. Todos los derechos reservados.</small>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
