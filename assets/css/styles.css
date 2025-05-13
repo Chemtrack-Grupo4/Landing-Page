@@ -35,14 +35,6 @@ footer {
   bottom: 0;
 }
 
-body {
-  margin-bottom: 0; /* Asegura que no haya margen inferior en el body */
-}
-
-.page-footer {
-  padding-bottom: 0; /* Asegura que el padding inferior se elimine */
-}
-
 .level-1-title {
   color: #072a16;
   -webkit-text-fill-color: #072a16;
@@ -57,15 +49,15 @@ body {
 }
 
 .level-2-title {
-  color: #0FF82B;
-  -webkit-text-fill-color: #0FF82B;
-  -moz-text-fill-color: #0FF82B;
-  -ms-text-fill-color: #0FF82B;
+  color: #0caf1f;
+  -webkit-text-fill-color: #0caf1f;
+  -moz-text-fill-color: #0caf1f;
+  -ms-text-fill-color: #0caf1f;
   font-family: "Heebo", sans-serif;
 }
 
 .paragraph {
-  color: #047211;
+  color: #010701;
   font-family: "Jost", sans-serif;
 }
 
@@ -117,7 +109,7 @@ body {
 }
 
 .fa-solid fa-book {
-  color: #2d6b22;
+  color: #6b3922;
 }
 
 .aboutpt-section {
