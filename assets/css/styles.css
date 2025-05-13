@@ -15,7 +15,7 @@
 
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
-  color: #047211 !important;
+  color: #11e62a !important;
 }
 
 .custom-navbar .nav-link:hover {
@@ -23,8 +23,24 @@
 }
 
 a {
-  color: #000;
-  text-decoration: none;
+  color: #ffffff;
+  padding-top: 50%;
+  text-decoration: rgb(255, 255, 255);
+}
+footer {
+  width: 100%;
+  padding: 0; /* Elimina todo el padding */
+  margin: 0;  /* Elimina márgenes */
+  position: relative;
+  bottom: 0;
+}
+
+body {
+  margin-bottom: 0; /* Asegura que no haya margen inferior en el body */
+}
+
+.page-footer {
+  padding-bottom: 0; /* Asegura que el padding inferior se elimine */
 }
 
 .level-1-title {
@@ -147,26 +163,5 @@ a {
   }
 }
 
-/* Asegura que html y body ocupen toda la altura */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Hace que el contenido principal crezca y empuje el footer */
-body > main {
-  flex: 1;
-}
-
-/* Estilo para el footer */
-footer {
-  background-color: #343a40; /* o el color que uses */
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  width: max-content;
-}
 
 
