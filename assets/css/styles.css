@@ -15,7 +15,7 @@
 
 .custom-navbar .nav-link,
 .custom-navbar .navbar-brand {
-  color: #047211 !important;
+  color: #11e62a !important;
 }
 
 .custom-navbar .nav-link:hover {
@@ -23,8 +23,16 @@
 }
 
 a {
-  color: #000;
-  text-decoration: none;
+  color: #ffffff;
+  padding-top: 50%;
+  text-decoration: rgb(255, 255, 255);
+}
+footer {
+  width: 100%;
+  padding: 0; /* Elimina todo el padding */
+  margin: 0;  /* Elimina márgenes */
+  position: relative;
+  bottom: 0;
 }
 
 .level-1-title {
@@ -41,15 +49,15 @@ a {
 }
 
 .level-2-title {
-  color: #0FF82B;
-  -webkit-text-fill-color: #0FF82B;
-  -moz-text-fill-color: #0FF82B;
-  -ms-text-fill-color: #0FF82B;
+  color: #0caf1f;
+  -webkit-text-fill-color: #0caf1f;
+  -moz-text-fill-color: #0caf1f;
+  -ms-text-fill-color: #0caf1f;
   font-family: "Heebo", sans-serif;
 }
 
 .paragraph {
-  color: #047211;
+  color: #010701;
   font-family: "Jost", sans-serif;
 }
 
@@ -101,7 +109,7 @@ a {
 }
 
 .fa-solid fa-book {
-  color: #2d6b22;
+  color: #6b3922;
 }
 
 .aboutpt-section {
@@ -147,26 +155,5 @@ a {
   }
 }
 
-/* Asegura que html y body ocupen toda la altura */
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Hace que el contenido principal crezca y empuje el footer */
-body > main {
-  flex: 1;
-}
-
-/* Estilo para el footer */
-footer {
-  background-color: #343a40; /* o el color que uses */
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  width: max-content;
-}
 
 
