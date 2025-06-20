@@ -29,3 +29,13 @@ This landing page serves as the public-facing introduction to the product.
 - **EmailJS / Formspree** *(contact form integration)*
 - **Deployed on Vercel / Netlify**
 
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/chemtrack-landing.git
+cd chemtrack-landing
+
