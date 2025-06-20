@@ -17,3 +17,15 @@ This landing page aims to showcase features, generate interest, and convert visi
 - Ensure regulatory compliance.
 
 This landing page serves as the public-facing introduction to the product.
+
+---
+
+## 🧰 Tech Stack
+
+- **HTML5, CSS3, JavaScript**
+- **React / Next.js** *(if applicable)*
+- **TailwindCSS** *(for utility-first styling)*
+- **Framer Motion** *(smooth animations)*
+- **EmailJS / Formspree** *(contact form integration)*
+- **Deployed on Vercel / Netlify**
+
